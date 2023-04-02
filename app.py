@@ -2,6 +2,7 @@ from flask import Flask, url_for, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from random import shuffle, sample
+from waitress import serve
 
 
 app = Flask(__name__)
@@ -219,4 +220,6 @@ def test_form_sample():
 
 
 if __name__ == "__main__":
-    app.run(port=8000, host='127.0.0.1', debug=True)
+    serve(app, host='0.0.0.0', port=5000)
+    #serve(app, port=5000, host='0.0.0.0')
+    #app.run(port=8000, host='127.0.0.1', debug=True)
