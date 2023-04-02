@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% block style %}
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    background-color: #FF6347;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+h1{
+    text-align: center}
+li{
+ margin-left: 12px;
+}
+{% endblock %}
+{% block title %}
+Простая форма
+{% endblock %}
+
+{% block body %}
+
+<div class="container-xl themed-container text-left">
+ <h1 class="fs-4">Викторина: Площадь Искусств</h1>
+                            <div>
+                                <form class="login_form" method="post" enctype="multipart/form-data">
+                                    <input type="text" class="form-control" id="name" placeholder="Введите имя" name="name">
+                                    <label for="classSelect"></label>
+
+
+
+
+                                    <ol class="alert alert-info" role="alert">
+                                         {% for key, user in vibor.items() %}
+                                        <li> <div class="form-group">
+
+                                        <label for="classSelect">
+                                            {{ key }}:
+                                        </label>
+
+                                        {% if loop.index == 1 %}
+                                        <select class="form-select" aria-label="Disabled select example" id="classSelect" name='1'>
+                                            {% for us in user[0] %}
+                                          <option> {{ us }}  </option>
+                                            {% endfor %}
+                                        </select>
+                                        {% endif %}
+
+                                            {% if loop.index == 2 %}
+                                        <select class="form-select" aria-label="Disabled select example" id="classSelect" name='2'>
+                                            {% for us in user[0] %}
+                                          <option> {{ us }}  </option>
+                                            {% endfor %}
+                                        </select>
+                                        {% endif %}
+
+                                            {% if loop.index == 3 %}
+                                        <select class="form-select" aria-label="Disabled select example" id="classSelect" name='3'>
+                                            {% for us in user[0] %}
+                                          <option> {{ us }}  </option>
+                                            {% endfor %}
+                                        </select>
+                                        {% endif %}
+
+                                            {% if loop.index == 4 %}
+                                        <select class="form-select" aria-label="Disabled select example" id="classSelect" name='4'>
+                                            {% for us in user[0] %}
+                                          <option> {{ us }}  </option>
+                                            {% endfor %}
+                                        </select>
+                                        {% endif %}
+
+                                        </div> </li>
+                                        {% endfor %}
+                                    </ol>
+
+                                    <button type="submit" class="btn btn-primary">Отправить</button>
+                                </form>
+                            </div>
+
+
+</div>
+{% endblock %}

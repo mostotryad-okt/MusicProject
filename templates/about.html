@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Страница про нас
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="1" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="/static/img/Chopin.jpg" ></text></svg>
+            <div class="card-body">
+              <p class="card-text">Фридерик Шопен (1810-1849) — Польский композитор и пианист французско-польского происхождения. (Этюд C минор революционый)</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <audio controls>
+                 <source src="static/Music/Chopin/C_minor_Revolutionary.mp3">
+                    </audio>
+                </div>
+                <small class="text-body-secondary">1830год</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="1" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="/static/img/Chubert.jpg" ></text></svg>
+            <div class="card-body">
+              <p class="card-text">Франц Шуберт (1797-1828) — Австрийский композитор, один из основоположников романтизма в музыке. (Аве Мария)</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <audio controls>
+                     <source src="static/Music/Schubert/Ave_Maria.mp3">
+                        </audio>
+
+                </div>
+                <small class="text-body-secondary">1825год</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="1" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"><img src="/static/img/Mussorgsky.jpg" ></text></svg>
+            <div class="card-body">
+              <p class="card-text">Модест Петрович Мусоргский (1839-1881) - Русский композитор, член «Могучей кучки». (Тюильрийский сад)</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <audio controls>
+                     <source src="static/Music/Mussorgsky/Tuileries_Garden.mp3">
+                         </audio>
+                </div>
+                <small class="text-body-secondary">1874год</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+{% endblock %}

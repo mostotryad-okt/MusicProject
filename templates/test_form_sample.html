@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+{% block style %}
+form.login_form {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    background-color: #FF6347;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+h1{
+    text-align: center}
+li{
+ margin-left: 12px;
+}
+{% endblock %}
+{% block title %}
+Простая форма
+{% endblock %}
+{% block body %}
+<h1 class="fs-4">Тест: Площадь Искусств</h1>
+<div class="container-xl themed-container text-left">
+                            <div>
+                                <form class="login_form" method="post" enctype="multipart/form-data">
+                                    <input type="text" class="form-control" id="name" placeholder="Введите имя" name="name">
+                                    <h2> Правда ли, что...</h2>
+                                     <ol class="alert alert-info" role="alert">
+                                         {% for user in true_all %}
+                                        <li class="form-check-label">
+                                            {% if loop.index == 1 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex1" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex1" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 2 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex2" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex2" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 3 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex3" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex3" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 4 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex4" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex4" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 5 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex5" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex5" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 6 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex6" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex6" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 7 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex7" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex7" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 8 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex8" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex8" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 9 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex9" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex9" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 10 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex10" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex10" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 11 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex11" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex11" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                         {% if loop.index == 12 %}
+                                     <div class="form-group">
+                                        <div class="form-check">
+                                        <label for="form-check">{{ user[0] }}</label>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex12" id="male" value="male" checked>
+                                          <label class="form-check-label" for="male">
+                                            Да
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="sex12" id="female" value="female">
+                                          <label class="form-check-label" for="female">
+                                            Нет
+                                          </label>
+                                        </div>
+                                    </div>
+                                          {% endif %}
+                                        </li>
+                                         {% endfor %}
+                                     </ol>
+                                    <label class="form-check-label"> Узнайте ваши результаты </label></br>
+                                    <button type="submit" class="btn btn-primary">Отправить</button>
+                                </form>
+                            </div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block style %}{% endblock %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block body %}
+<div class="container">
+<h1 class="pb-2 border-bottom">Ваш выбор - {{ title }}</h1>
+
+<ul class="list-group">
+    {% for user in lst %}
+        <li class="list-group-item list-group-item-primary">{{ user }}</li>
+    {% else %}
+        <li><em>There are no users found</em></li>
+    {% endfor %}
+</ul>
+      </div>
+{% endblock %}
